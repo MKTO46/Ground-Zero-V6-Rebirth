@@ -5,7 +5,7 @@
 </style></head><body><canvas id="stars" aria-hidden="true"></canvas><div class="haze"></div><svg class="cross" viewBox="0 0 28 42" aria-hidden="true"><line x1="14" y1="2" x2="14" y2="40"/><line x1="3" y1="14" x2="25" y2="14"/></svg><main id="main" aria-live="polite"></main>
 <script>
 'use strict';
-const KEY='groundZeroSimple2026', REST=180000, localDay=()=>{const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')};
+const KEY='groundZeroSimple2026-reset-20261029', REST=180000, localDay=()=>{const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')};
 const clock=()=>new Date().toLocaleTimeString([], {hour:'numeric',minute:'2-digit'});
 const seconds=n=>String(Math.floor(Math.max(0,n)/60)).padStart(2,'0')+':'+String(Math.max(0,n)%60).padStart(2,'0');
 const mk=(name,category,sets,detail,run=false)=>({name,category,sets,detail,run});
